@@ -7,7 +7,38 @@ img{
   height: auto;
 }
 
+.logo{
+  a{
+    img{
+      margin-left: 30%;
+      width: 40%;
+    }
+  }
+}
+
 nav{
   ul{
   }
+}
+
+#buttonContainer{
+  button{
+    width: 50%;
+    margin-left: 25%;
+    margin-top: 30px;
+  }
+}
+
+@media screen and(min-width: 740px){
+
+  nav{
+    ul{
+      li{
+        padding: 0 10% 0 10%;
+        font-size: 25px;
+      }
+    }
+  }
+
+
 }
