@@ -29,12 +29,22 @@ nav{
   }
 }
 
+.card{
+  border: none;
+  .card-img{
+    border-radius: 300px;
+  }
+}
+
+#cards{
+  justify-content: center;
+}
+
 @media screen and(min-width: 740px){
 
   nav{
     ul{
       li{
-        padding: 0 10% 0 10%;
         font-size: 25px;
       }
     }
