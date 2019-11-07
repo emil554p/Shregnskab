@@ -1,7 +1,10 @@
 $primaryColor: #557A55;
 $textWhite: #FFFFFF;
 $fontFam: Arial;
-
+@mixin flexCenter($justify: center){
+  display: flex;
+  justify-content: $justify;
+}
 
 @import "../node_modules/bootstrap/scss/bootstrap";
 
@@ -51,8 +54,14 @@ nav{
 }
 
 #cards{
-  justify-content: center;
+  @include flexCenter;
 }
+
+#kontaktContainer{
+  @include flexCenter;
+}
+
+
 
 @media screen and(min-width: 768px){
 
@@ -77,6 +86,5 @@ nav{
       border-radius: 20px;
     }
   }
-
 
 }
