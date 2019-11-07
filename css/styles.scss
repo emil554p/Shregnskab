@@ -14,18 +14,39 @@ img{
   padding: 0;
 }
 
+#headerWrap{
+  flex-direction: column;
+}
+
 .logo{
   a{
     img{
-      margin-left: 30%;
-      width: 40%;
+      margin-top: 5%;
+      margin-left: 25%;
+      width: 50%;
     }
   }
 }
 
 nav{
-  ul{
-
+  margin-top: 7%;
+  margin-bottom: 7%;
+  a{
+    &:hover{
+      text-decoration: none;
+      color: $textWhite;
+    }
+    text-decoration: none;
+    color: $textWhite;
+    background-color: #292929;
+    height: 1.5rem;
+    width: 5rem;
+    padding-top: 0.2rem;
+    text-align: center;
+    border-radius: 5px;
+    font-weight: bold;
+    font-family: $fontFam ;
+    font-size: 12px;
   }
 }
 
@@ -78,5 +99,69 @@ nav{
     }
   }
 
+  nav{
+    margin-top: 7%;
+    margin-bottom: 7%;
+    a{
+      &:hover{
+        text-decoration: none;
+        color: $textWhite;
+      }
+      text-decoration: none;
+      color: $textWhite;
+      background-color: #292929;
+      height: 2.8rem;
+      width: 9rem;
+      padding-top: 0.5rem;
+      text-align: center;
+      border-radius: 5px;
+      font-weight: bold;
+      font-family: $fontFam ;
+      font-size: 20px;
+    }
+  }
 
+
+}
+
+@media screen and(min-width: 1200px) {
+
+
+
+  .logo{
+    width: 60vw;
+    a{
+      img{
+        margin-top: 5%;
+        margin-left: 10%;
+        width: 50%;
+      }
+    }
+  }
+  #headerWrap{
+    flex-direction: row;
+  }
+
+  nav{
+    width: 40vw;
+    margin-top: 7%;
+    margin-bottom: 7%;
+    a{
+      &:hover{
+        text-decoration: none;
+        color: $textWhite;
+      }
+      text-decoration: none;
+      color: $textWhite;
+      background-color: #292929;
+      height: 3rem;
+      width: 8.5rem;
+      padding-top: 0.6rem;
+      text-align: center;
+      border-radius: 5px;
+      font-weight: bold;
+      font-family: $fontFam ;
+      font-size: 20px;
+    }
+  }
 }
