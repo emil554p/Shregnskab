@@ -58,6 +58,7 @@ nav{
 }
 
 #kontaktContainer{
+  margin-top: 10%;
   @include flexCenter;
 
   #kontaktIMG{
@@ -77,6 +78,18 @@ nav{
   a{
     color: black;
     text-decoration: none;
+  }
+}
+
+#ansøgning{
+  @include flexCenter;
+  margin-top: 10%;
+  h5 {
+    color: white;
+    padding: 7%;
+    width: 75%;
+    border-radius: 5%;
+    background-color: darkslategray;
   }
 }
 
