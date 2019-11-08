@@ -22,6 +22,10 @@ img{
   flex-direction: column;
 }
 
+#active{
+  color: $primaryColor;
+}
+
 .logo{
   a{
     img{
@@ -76,7 +80,7 @@ nav{
 }
 
 #cards{
-  justify-content: center;
+  @include flexCenter;
 }
 
 #kontaktContainer{
@@ -110,7 +114,7 @@ nav{
     color: white;
     padding: 7%;
     width: 75%;
-    border-radius: 5%;
+    border-radius: 5px;
     background-color: darkslategray;
   }
 }
@@ -161,6 +165,21 @@ nav{
     }
   }
 
+  #mobileBreaker{
+    display: none;
+  }
+
+  #kontaktWrapper{
+    @include flexCenter(space-evenly);
+  }
+
+  #ansøgningWrapper{
+    @include flexCenter(space-evenly);
+
+    #ansøgning{
+    width: 50%;
+    }
+  }
 
 }
 
@@ -204,4 +223,28 @@ nav{
       font-size: 20px;
     }
   }
+  #headerText{
+    font-size: 56px;
+  }
+  #textHandler{
+    #kontakt{
+      font-size: 18px;
+    }
+  }
+
+  #kontaktIMG{
+    width: 20%;
+  }
+  #ansøgningWrapper{
+    @include flexCenter;
+
+    #ansøgning{
+      width: 50%;
+
+      h5{
+        font-size: 32px;
+      }
+    }
+  }
+
 }
