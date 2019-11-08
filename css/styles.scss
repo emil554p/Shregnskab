@@ -14,6 +14,10 @@ img{
   height: auto;
 }
 
+.row{
+  margin: 0;
+}
+
 .container-fluid{
   padding: 0;
 }
@@ -76,6 +80,7 @@ nav{
 }
 
 #cards{
+  margin-top: 50px;
   justify-content: center;
 }
 
@@ -117,6 +122,12 @@ nav{
 
 @media screen and(min-width: 768px){
 
+  #cards{
+    padding-right: 20%;
+    padding-left: 20%;
+  }
+
+
   nav{
     ul{
       li{
@@ -126,9 +137,12 @@ nav{
   }
 
   #buttonContainer{
+    padding-left: 20%;
+    padding-right: 20%;
     button{
-      margin-left: 0;
-      width: 25%;
+      flex: 0 0 45%;
+      margin-right: 2.5%;
+      margin-left: 2.5%;
       margin-top: 30px;
       background-color: $primaryColor;
       color: $textWhite;
