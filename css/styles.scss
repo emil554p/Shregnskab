@@ -75,6 +75,42 @@ nav{
   justify-content: center;
 }
 
+#kontaktContainer{
+  margin-top: 10%;
+  @include flexCenter;
+
+  #kontaktIMG{
+    width: 70%;
+  }
+}
+#textHandler {
+  @include flexCenter;
+  #kontakt {
+    font-size: 14px;
+  }
+}
+
+#icons{
+  @include flexCenter(space-evenly);
+  font-size: 50px;
+  a{
+    color: black;
+    text-decoration: none;
+  }
+}
+
+#ansøgning{
+  @include flexCenter;
+  margin-top: 10%;
+  h5 {
+    color: white;
+    padding: 7%;
+    width: 75%;
+    border-radius: 5%;
+    background-color: darkslategray;
+  }
+}
+
 @media screen and(min-width: 768px){
 
   nav{
