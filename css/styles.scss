@@ -4,6 +4,10 @@ $fontFam: Arial;
 
 
 @import "../node_modules/bootstrap/scss/bootstrap";
+@mixin flexCenter($justify: center){
+  display: flex;
+  justify-content: $justify;
+}
 
 img{
   width: 100%;
