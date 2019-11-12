@@ -5,7 +5,6 @@
     <title>Sh Regnskab</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/styles.css">
-
 </head>
 <body>
 
@@ -19,31 +18,49 @@
         </header>
 
         <nav id="" class="navbar-light d-flex justify-content-around">
-            <a href="#">Forside</a>
+            <a id="active" href="#">Forside</a>
             <a href="#">Kontakt</a>
             <a href="#">Information</a>
         </nav>
     </div>
 
-    
+    <hr>
     <div class="headerimg">
         <img src="css/images/Headerimg.PNG">
     </div>
 
-    <div id="buttonContainer" class="row">
-        <button type="button" class="btn p-2 col-md-6">Moms</button>
-        <button type="button" class="btn p-2 col-md-6">Nigger</button>
-        <button type="button" class="btn p-2 col-md-6">Nigger2</button>
-        <button type="button" class="btn p-2 col-md-6">Nigger2</button>
+    <div class="overskrifter text-center m-5 ">
+        <h2 class="m-4">VELKOMMEN TIL SH REGNSKAB</h2>
+        <h4 class="m-4">SH Regnskab giver økonomisk overblik</h4>
+        <h6 class="m-4">Er der styr på kreditorer og debitorer, på momsen og lønudbetalingerne?
+            <br>
+            Vi afstemmer din bogføring løbende, så du kan føle dig tryg ved din økonomi.</h6>
     </div>
+
+    <div id="buttonContainer" class="row">
+        <button type="button" class="btn  col-md-6">Bogføring</button>
+        <button type="button" class="btn col-md-6">Lønadmin.</button>
+        <button type="button" class="btn col-md-6">Årsafslutning</button>
+        <button id="toggle" type="button" class="btn col-md-6">Andre områder</button>
+        <div id="buttonWrapper" class="hidden">
+            <div id="toggleElement" class="row d-flex">
+                <button type="button" class="btn col-md-6">Moms</button>
+                <button type="button" class="btn col-md-6">Kreditorstring</button>
+                <button type="button" class="btn col-md-6">Budget</button>
+                <button type="button" class="btn col-md-6">Ejendomsadmin.</button>
+                <button type="button" class="btn col-md-6">Debitorstyring</button>
+            </div>
+        </div>
+    </div>
+
 
     <div id="cards" class="row">
         <div class="card mb-3 col-md-6" style="max-width: 540px;">
             <div class="row no-gutters">
-                <div class="col-md-4">
-                    <img src="css/images/blackman.jpg" class="card-img" alt="...">
+                <div class="col-4">
+                    <img src="css/images/bubble.PNG" class="card-img" alt="...">
                 </div>
-                <div class="col-md-8">
+                <div class="col-8">
                     <div class="card-body">
                         <h5 class="card-title">Card title</h5>
                         <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
@@ -53,10 +70,10 @@
         </div>
         <div class="card mb-3 col-md-6" style="max-width: 540px;">
             <div class="row no-gutters">
-                <div class="col-md-4">
-                    <img src="css/images/blackman.jpg" class="card-img" alt="...">
+                <div class="col-4">
+                    <img src="css/images/bubble.PNG" class="card-img" alt="...">
                 </div>
-                <div class="col-md-8">
+                <div class="col-8">
                     <div class="card-body">
                         <h5 class="card-title">Card title</h5>
                         <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
@@ -66,10 +83,10 @@
         </div>
         <div class="card mb-3 col-md-6" style="max-width: 540px;">
             <div class="row no-gutters">
-                <div class="col-md-4">
-                    <img src="css/images/blackman.jpg" class="card-img" alt="...">
+                <div class="col-4">
+                    <img src="css/images/bubble.PNG" class="card-img" alt="...">
                 </div>
-                <div class="col-md-8">
+                <div class="col-8">
                     <div class="card-body">
                         <h5 class="card-title">Card title</h5>
                         <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
@@ -79,10 +96,10 @@
         </div>
         <div class="card mb-3 col-md-6" style="max-width: 540px;">
             <div class="row no-gutters">
-                <div class="col-md-4">
-                    <img src="css/images/blackman.jpg" class="card-img" alt="...">
+                <div class="col-4">
+                    <img src="css/images/bubble.PNG" class="card-img" alt="...">
                 </div>
-                <div class="col-md-8">
+                <div class="col-8">
                     <div class="card-body">
                         <h5 class="card-title">Card title</h5>
                         <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
@@ -101,5 +118,7 @@
 
 </div>
 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="js/forside.js"></script>
 </body>
 </html>
