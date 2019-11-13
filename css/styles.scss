@@ -146,8 +146,12 @@ nav{
     color: white;
     padding: 7%;
     width: 75%;
-    border-radius: 5%;
+    border-radius: 15px;
     background-color: darkslategray;
+    a{
+      text-decoration: none;
+      color: white;
+    }
   }
 }
 
@@ -162,26 +166,61 @@ nav{
   background-color: $primaryColor;
 }
 
-@media screen and(min-width: 768px){
+.footer{
+  a {
+    color: #ffffff;
+    p {
+      font-size: 0.65rem;
+      padding-right: 0.5rem;
+      border-right: solid white 0.1rem;
+    }
+  }
+  &__some{
+    margin-left: 50% !important;
+    margin-right: 50% !important;
+    a{
+      color: $primaryColor;
+    }
+  }
+  &__address {
+    &__map {
+      &--nf {
+        p {
+          border-right: none !important;
+        }
+      }
+    }
+  }
+  &__contact{
+    &__cookies{
+      p{
+        border-right: none !important;
+      }
+    }
+  }
+}
 
-  #cards{
+@media screen and(min-width: 768px) {
+
+  #cards {
     padding-right: 20%;
     padding-left: 20%;
   }
 
 
-  nav{
-    ul{
-      li{
+  nav {
+    ul {
+      li {
         font-size: 25px;
       }
     }
   }
 
-  #buttonContainer{
+  #buttonContainer {
     padding-left: 20%;
     padding-right: 20%;
-    button{
+
+    button {
       flex: 0 0 45%;
       margin-right: 2.5%;
       margin-left: 2.5%;
@@ -195,14 +234,16 @@ nav{
     }
   }
 
-  nav{
+  nav {
     margin-top: 7%;
     margin-bottom: 7%;
-    a{
-      &:hover{
+
+    a {
+      &:hover {
         text-decoration: none;
         color: $textWhite;
       }
+
       text-decoration: none;
       color: $textWhite;
       background-color: #292929;
@@ -212,27 +253,38 @@ nav{
       text-align: center;
       border-radius: 5px;
       font-weight: bold;
-      font-family: $fontFam ;
+      font-family: $fontFam;
       font-size: 20px;
     }
   }
 
-  #mobileBreaker{
+  #mobileBreaker {
     display: none;
   }
 
-  #kontaktWrapper{
+  #kontaktWrapper {
     @include flexCenter(space-evenly);
   }
 
-  #ansøgningWrapper{
+  #ansøgningWrapper {
     @include flexCenter(space-evenly);
 
-    #ansøgning{
-    width: 50%;
+    #ansøgning {
+      width: 50%;
     }
   }
-
+  .footer{
+    a{
+      p{
+        font-size: 1.3rem;
+      }
+    }
+    &__some{
+      a{
+        font-size: 1.5rem;
+      }
+    }
+  }
 }
 
 @media screen and(min-width: 1200px) {
@@ -307,5 +359,15 @@ nav{
       }
     }
   }
-
+  .footer {
+    &__address {
+      &__map {
+        &--nf {
+          p {
+            border-right: solid white 0.1rem !important;
+          }
+        }
+      }
+    }
+  }
 }
